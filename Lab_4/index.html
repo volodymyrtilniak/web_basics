@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab_4</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Моя перша HTML-форма</h1>
+    <form action="https://httpbin.org/get" method="GET">
+      <p>
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" size="25" />
+      </p>
+      <p>
+        <label
+          >Дата народження:
+          <input type="date" name="birthdate" />
+        </label>
+      </p>
+      <p>
+        <label for="email">Імейл:</label>
+        <input type="email" id="email" name="email" size="25" />
+      </p>
+      <p>
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="2" cols="30"></textarea>
+      </p>
+      <p>Ваші улюблені напої?</p>
+      <label>
+        <input type="checkbox" name="kvass" value="Квас" />
+        Квас
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="tea" value="Чай" />
+        Чай
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="juice" value="Сік" />
+        Сік
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" name="water" value="Вода" />
+        Вода
+      </label>
+      <br />
+      <p>Моя національність:</p>
+      <label>
+        <input type="radio" name="nationality" value="Українець" />
+        Українець
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="nationality" value="Не українець" />
+        Не українець
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="nationality" value="Інша" />
+        Інша
+      </label>
+      <br /><br />
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button>
+    </form>
+    <picture>
+      <source
+        media="(max-width: 467px)"
+        srcset="https://picsum.photos/300/500"
+      />
+      <img
+        src="https://picsum.photos/1000/400"
+        alt="Демонстраційне зображення"
+      />
+    </picture>
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
